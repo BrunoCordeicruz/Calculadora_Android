@@ -194,21 +194,31 @@
 
             <Button
                 android:id="@+id/btnPotencia"
-                android:layout_width="138dp"
+                android:layout_width="118dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="clique"
                 android:text="Xˣ"
-                android:textSize="32dp" />
+                android:textSize="28dp" />
+
+            <Button
+                android:id="@+id/btnLog"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="clique"
+                android:text="Log"
+                android:textSize="28dp" />
 
             <Button
                 android:id="@+id/btnLimpar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Limpar"
                 android:onClick="limpar"
-                android:textSize="32dp" />
+                android:text="Limpar"
+                android:textSize="28dp" />
+
         </LinearLayout>
 
         <LinearLayout

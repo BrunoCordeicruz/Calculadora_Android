@@ -103,6 +103,11 @@ public class MainActivity extends AppCompatActivity {
             valor1 = Double.valueOf(textView.getText().toString());
             textView.setText("");
         }
+        if (view.getId() == R.id.btnLog) {
+            operacao = 8;
+            valor1 = Double.valueOf(textView.getText().toString());
+            textView.setText("");
+        }
 
         if (view.getId() == R.id.btnIgual) {
             Double valor2 = Double.valueOf(textView.getText().toString());
@@ -132,6 +137,10 @@ public class MainActivity extends AppCompatActivity {
             }
             if (operacao == 7) {
                 Double resultado = Math.sqrt(valor1);
+                textView.setText(resultado.toString());
+            }
+            if (operacao == 8) {
+                Double resultado = Math.log10(valor1);
                 textView.setText(resultado.toString());
             }
         }
